@@ -13,7 +13,7 @@ export class AppComponent {
     arrayDeTarefas: Tarefa[] = [];
     apiURL : string;
     constructor(private http: HttpClient) {
-        this.apiURL = 'https://apitarefasbreno215960.herokuapp.com'
+        this.apiURL = 'https://todoapp-api-ten.vercel.app'
 ;
         this.READ_tarefas();
     }
