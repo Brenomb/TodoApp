@@ -21,7 +21,8 @@
       <div class="main">
       
         <h1>Lucas Bruder - 215907<br>Patrick Santos - 225469</h1>
-        <input class="lg-text-input" (keyup.enter)="CREATE_tarefa(campoNovoItem.value)" #campoNovoItem />
+        <input class="lg-text-input" #campoNovoItem (keyup.enter)="CREATE_tarefa(campoNovoItem.value)"
+    (keyup.enter)="campoNovoItem.value =''" />
         <button class="btn-primary" (click)="CREATE_tarefa(campoNovoItem.value)">Adicionar Tarefa</button>
 
         <ul>
